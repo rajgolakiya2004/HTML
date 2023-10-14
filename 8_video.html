@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video and Audio</title>
+</head>
+<body> 
+
+<!--
+    controls == give pause/start/volume
+    preload == video load when website open
+    autoplay == video automatic play when website open but before autoplay use preload
+    loop == when video end automatic start
+    muted == video default mute 
+    poster == same as thumbnail     
+
+    note :  when you have use poster then not use (preload and autoplay) because only thumnail see when video not start
+                                      
+    -->
+
+
+
+    <video controls="" width="1000px" height="400px" loop="" muted="" poster="./images/bear.jpg">
+
+        <source src="./video/movie.mp4"  type="video/mp4">
+        <source src="./video/movie.ogv"  type="video/ogv">
+        <source src="./video/movie.webm"  type="video/webm">
+    </video>
+    <hr>
+
+    <audio controls="" preload="" autoplay="" muted>
+        <source src="./video/Adipurush.mp3"  type="audio/mp3">
+        <source src="./video/Adipurush.ogg"  type="audio/ogg">
+        <source src="./video/Adipurush.wav"  type="audio/wav">
+
+    </audio>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <legend>Enquiry</legend>
+
+
+     <!--disabled == data not submit // readonly == only read not write but data submit-->
+        Name : <input type="text" name="Name" value=""  placeholder="Enter your name" required="" autofocus=""  maxlength="20">   
+                 <br><br>
+
+        Address : <textarea name="textarea" id="" cols="30" rows="10">address</textarea> 
+                <br><br>    <!-- textarea no need value -->
+
+        Gender : 
+        <input type="radio" value="m" name="Gender">Male
+        <input type="radio" value="f" name="Gender" checked="">Female
+        <input type="radio" value="o" name="Gender">other         
+          <br><br>
+
+        Country :
+        <select>
+            <option value="1">Please select a country</option>
+            <optgroup label="Asia">
+                <option value="india">India</option>
+                <option value="shri lanka">Shri Lanka</option>
+    
+            </optgroup>
+           <option value="germany">Germany</option>
+           <option value="usa">USA</option>
+
+        </select>
+        <br><br>
+
+        Hobbies :
+        <input type="checkbox" name="hobbies[]">playing
+        <input type="checkbox" name="hobbies[]">Watching
+        <input type="checkbox" name="hobbies[]" checked="">Gameing
+        <input type="checkbox" name="hobbies[]">Traveling
+        <br><br>
+
+        Image :
+        <input type="file" name="image" id="">
+        <br><br>
+
+
+         <!-- datalist give suggestion 
+         call datalist need id and input type ==> list == same id name -->
+        course :
+        <input type="text" name="course" list="anything">
+        <datalist id="anything"> 
+            <option value="HTML">HTML</option>
+            <option value="HTML 5">HTML 5</option>
+            <option value="CSS">CSS</option>
+            <option value="CSS 5">CSS 5</option>
+            <option value="PHP">PHP</option>
+            <option value="Java Script">Java Script</option>
+        </datalist>
+        <br><br>
+
+        color :
+        <!-- default color = black if you have not entered value -->
+        <input type="color" name="color" value="#FF0000">
+        <br><br>
+
+        Email :
+        <input type="email" value="">
+        <br><br>
+
+        Password :
+        <input type="password" name="password">
+        <br><br>
+
+        Age :
+        <input type="number" value="age" min="1" max="25">
+        <br><br>
+
+        Secret :
+        <input type="hidden" value="Secret">
+        <br><br>
+
+        Date :
+        <input type="date" value="date">
+        <br><br>
+
+        Date Time :
+        <input type="datetime-local" value="date time">
+        <br><br>
+
+        Time :
+        <input type="time" value="time">
+        <br><br>
+
+        Month :
+        <input type="month" value="Month">
+        <br><br>
+
+        Week :
+        <input type="week" value="Week">
+        <br><br> 
+
+        Range :
+        <!-- default max range == 100 // default range == 50% -->
+        <input type="range" value="Range" min="0" max="200" value="150">
+        <br><br>
+
+           
+           
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+
+    </fieldset>
+    </form>
+</body>
+</html> 
